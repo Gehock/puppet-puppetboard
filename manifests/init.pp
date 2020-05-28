@@ -230,7 +230,7 @@ class puppetboard(
   }
 
   vcsrepo { "${basedir}/puppetboard":
-    ensure   => present,
+    ensure   => latest,
     provider => git,
     owner    => $user,
     source   => $git_source,
